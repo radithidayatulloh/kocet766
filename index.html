@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0d12" />
+    <title>Gorengan Pak/Bu — Hangat, Renyah, Bikin Nagih</title>
+    <meta
+      name="description"
+      content="UMKM gorengan hangat setiap hari: mendoan, cireng, tahu isi, bakwan, pisang goreng. Pesan cepat via WhatsApp, antar area terdekat."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Lewati ke menu</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Beranda">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C7.58 2 4 5.58 4 10C4 14.42 7.58 18 12 18C14.76 18 17.16 16.92 18.84 15.12L21.96 18.24L18.84 21.36L15.72 18.24C14.28 19.56 12.72 20.5 11 21C7.5 20 5 17.5 5 14C5 10.5 7.5 7.5 11 7.5C11.5 7.5 12 7.58 12.5 7.74V4.5C12.5 3.67 11.83 3 11 3C10.17 3 9.5 3.67 9.5 4.5V6.5H7.5V4.5C7.5 2.57 9.07 1 11 1C12.93 1 14.5 2.57 14.5 4.5V7.5H12.5V7.74C13 7.58 13.5 7.5 14 7.5C16.5 7.5 18.5 9.5 18.5 12C18.5 13.58 17.92 15 16.88 16.12C18.56 14.32 20 12.32 20 10C20 5.58 16.42 2 12 2Z" fill="#101118"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Gorengan</span>
+            <span class="brand-sub">hangat tiap hari</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Buka menu</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#menu">Menu</a>
+          <a href="#promo">Promo</a>
+          <a href="#testimoni">Testimoni</a>
+          <a href="#lokasi">Lokasi</a>
+          <a class="btn btn-ghost" href="#pesan">Pesan</a>
+        </div>
+
+        <button class="cart-fab" type="button" onclick="toggleCart()" aria-label="Buka keranjang">
+          <span class="cart-icon" aria-hidden="true">🧺</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="pill">
+              <span class="dot" aria-hidden="true"></span>
+              Renyah • Hangat • Fresh
+            </p>
+            <h1>Gorengan yang bikin “nambah lagi” dari gigitan pertama.</h1>
+            <p class="lead">
+              Dibuat dari bahan pilihan, digoreng fresh. Cocok buat teman kopi, rapat, sampai acara keluarga. Pesan cepat,
+              tinggal chat WhatsApp.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#menu">Lihat Menu</a>
+              <a class="btn btn-secondary" href="#pesan">Pesan Sekarang</a>
+            </div>
+
+            <div class="hero-stats" role="list">
+              <div class="stat" role="listitem">
+                <div class="stat-value">±10 menit</div>
+                <div class="stat-label">fresh goreng</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">4.8/5</div>
+                <div class="stat-label">rating pelanggan</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">COD</div>
+                <div class="stat-label">bayar di tempat</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <div class="hero-card-avatar"></div>
+                <div class="hero-card-title">
+                  <div class="line line-1"></div>
+                  <div class="line line-2"></div>
+                </div>
+              </div>
+              <div class="hero-card-grid">
+                <div class="tile tile-a"><img src="gorengan-2.jpg" alt="" /></div>
+                <div class="tile tile-b"><img src="risol.jpg" alt="" /></div>
+                <div class="tile tile-c"><img src="tahu-isi-bihun-foto-resep-utama.jpg" alt="" /></div>
+                <div class="tile tile-d"><img src="r.jpg" alt="" /></div>
+              </div>
+              <div class="hero-card-bottom">
+                <div class="chip">Sambal</div>
+                <div class="chip">Cocolan</div>
+                <div class="chip">Packing rapi</div>
+              </div>
+            </div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Menu Best Seller</h2>
+              <p class="muted">Klik “Tambah” untuk masuk keranjang. Bisa atur qty di keranjang.</p>
+            </div>
+            <div class="section-actions">
+              <span class="hint">Gratis sambal untuk pembelian min. 5 pcs</span>
+            </div>
+          </div>
+
+          <div class="grid cards">
+            <article class="menu-card">
+              <img
+                src="gorengan-2.jpg"
+                alt="mendoan & bakwan"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>mendoan & bakwan</h3>
+                  <span class="price" data-price="5000">Rp 5.000</span>
+                </div>
+                <p class="menu-desc">Gurih, kriuk di luar, kenyal pas. Favorit semua umur.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Cireng',5000)">Tambah</button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Cireng')">Catatan</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="risol.jpg"
+                alt="Mendoan hangat"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>risol</h3>
+                  <span class="price" data-price="4000">Rp 4.000</span>
+                </div>
+                <p class="menu-desc">Tempe tipis, lembut, wangi daun bawang. Mantap pakai sambal kecap.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Mendoan',4000)">Tambah</button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Mendoan')">Catatan</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="400300d9611a9a38eaea6184892be7aa.jpg"
+                alt="Pisang goreng"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>Pisang Goreng</h3>
+                  <span class="price" data-price="6000">Rp 6.000</span>
+                </div>
+                <p class="menu-desc">Manis legit, kulit keemasan, cocok buat teman teh.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Pisang Goreng',6000)">Tambah</button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Pisang Goreng')">Catatan</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="tahu-isi-bihun-foto-resep-utama.jpg"
+                alt="Tahu isi"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>Tahu Isi</h3>
+                  <span class="price" data-price="6000">Rp 6.000</span>
+                </div>
+                <p class="menu-desc">Isi sayur padat, kulit tahu garing. Favorit untuk cemilan sore.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Tahu Isi',6000)">Tambah</button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Tahu Isi')">Catatan</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="r.jpg"
+                alt="Bakwan"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>Bakwan</h3>
+                  <span class="price" data-price="4000">Rp 4.000</span>
+                </div>
+                <p class="menu-desc">Sayur berlimpah, garing merata, pas dicocol saus sambal.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Bakwan',4000)">Tambah</button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Bakwan')">Catatan</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                src="kq.jpg"
+                alt="Paket hemat"
+                loading="lazy"
+              />
+              <div class="menu-body">
+                <div class="menu-title">
+                  <h3>Paket Hemat</h3>
+                  <span class="price" data-price="25000">Rp 25.000</span>
+                </div>
+                <p class="menu-desc">Mix 6 pcs (best seller) + sambal. Cocok buat sharing.</p>
+                <div class="menu-actions">
+                  <button class="btn btn-small" type="button" onclick="addToCart('Paket Hemat (6 pcs)',25000)">
+                    Tambah
+                  </button>
+                  <button class="btn btn-small btn-ghost" type="button" onclick="quickNote('Paket Hemat (6 pcs)')">
+                    Catatan
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="promo">
+        <div class="container">
+          <div class="promo">
+            <div class="promo-copy">
+              <h2>Promo Hari Ini</h2>
+              <p class="muted">
+                Biar makin hemat, kami siapin promo mingguan. (Bisa kamu ubah bebas nanti.)
+              </p>
+              <ul class="promo-list">
+                <li><strong>Beli 10 pcs</strong> bonus 1 pcs (pilih menu bebas)</li>
+                <li><strong>Gratis ongkir</strong> area dekat untuk min. Rp 35.000</li>
+                <li><strong>Diskon 10%</strong> untuk pre-order acara (min. 50 pcs)</li>
+              </ul>
+              <a class="btn btn-primary" href="#pesan">Ambil Promo</a>
+            </div>
+            <div class="promo-card" aria-hidden="true">
+              <div class="promo-tag">BEST DEAL</div>
+              <div class="promo-price">Rp 25K</div>
+              <div class="promo-sub">Paket Hemat 6 pcs</div>
+              <div class="promo-meta">
+                <span>Fresh</span>
+                <span>Rapi</span>
+                <span>Halal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimoni">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Apa Kata Pelanggan</h2>
+              <p class="muted">Beberapa testimoni contoh. Nanti tinggal ganti nama/fotonya.</p>
+            </div>
+          </div>
+          <div class="grid testimonials">
+            <figure class="quote">
+              <blockquote>“Mendoannya lembut banget, sambalnya enak, packing juga rapi.”</blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true"></span>
+                <span>
+                  <strong>Rina</strong>
+                  <span class="muted">Pelanggan</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Cirengnya kriuk tahan lama, pas buat snack kantor. Repeat order!”</blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true"></span>
+                <span>
+                  <strong>Agus</strong>
+                  <span class="muted">Karyawan</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Pisang gorengnya manis legit, anak-anak suka. Antarnya cepat.”</blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true"></span>
+                <span>
+                  <strong>Sari</strong>
+                  <span class="muted">Ibu Rumah Tangga</span>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="lokasi">
+        <div class="container">
+          <div class="location">
+            <div class="location-copy">
+              <h2>Lokasi & Jam Buka</h2>
+              <p class="muted">
+                Tulis alamat kamu di sini. Kalau mau, nanti saya bisa pasang Google Maps embed.
+              </p>
+              <div class="info-grid">
+                <div class="info">
+                  <div class="info-k">Alamat</div>
+                  <div class="info-v">Jl.kapten Silitonga, Pandansari Selatan</div>
+                </div>
+                <div class="info">
+                  <div class="info-k">Jam</div>
+                  <div class="info-v">Senin–Minggu, 15.00–22.00</div>
+                </div>
+                <div class="info">
+                  <div class="info-k">Pengiriman</div>
+                  <div class="info-v">COD / kurir lokal</div>
+                </div>
+              </div>
+            </div>
+            <div class="map" aria-label="Preview peta">
+              <!-- Ganti src di bawah dengan Google Maps embed URL -->
+              <!-- Cara dapat embed URL: Share > Embed a map di Google Maps -->
+             <div class="map" aria-label="Preview peta">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!4v1777000165949!6m8!1m7!1sTL2QEaRnhQ0VDcHNbneHeA!2m2!1d-5.312066351338099!2d105.0073157139114!3f88.72022921222941!4f-11.477168693486519!5f0.7820865974627469"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pesan">
+        <div class="container">
+          <div class="checkout">
+            <div>
+              <h2>Pesan Sekarang</h2>
+              <p class="muted">Isi nama & alamat, lalu checkout ke WhatsApp. Keranjangmu akan ikut terkirim.</p>
+            </div>
+            <form class="form" onsubmit="event.preventDefault(); checkout();">
+              <div class="field">
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Contoh: Budi" />
+              </div>
+              <div class="field">
+                <label for="alamat">Alamat / Patokan</label>
+                <textarea
+                  id="alamat"
+                  name="alamat"
+                  rows="3"
+                  autocomplete="street-address"
+                  placeholder="Contoh: Perum X Blok B2, dekat masjid…"
+                ></textarea>
+              </div>
+              <div class="field">
+                <label for="catatan">Catatan Pesanan (opsional)</label>
+                <input id="catatan" name="catatan" type="text" placeholder="Contoh: sambal dipisah, tanpa kol…" />
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Checkout WhatsApp</button>
+                <button class="btn btn-ghost" type="button" onclick="toggleCart()">Lihat Keranjang</button>
+              </div>
+              <p class="tiny muted">
+                Nomor WhatsApp masih placeholder. Nanti tinggal ganti di `script.js` (variabel `nomor`).
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C7.58 2 4 5.58 4 10C4 14.42 7.58 18 12 18C14.76 18 17.16 16.92 18.84 15.12L21.96 18.24L18.84 21.36L15.72 18.24C14.28 19.56 12.72 20.5 11 21C7.5 20 5 17.5 5 14C5 10.5 7.5 7.5 11 7.5C11.5 7.5 12 7.58 12.5 7.74V4.5C12.5 3.67 11.83 3 11 3C10.17 3 9.5 3.67 9.5 4.5V6.5H7.5V4.5C7.5 2.57 9.07 1 11 1C12.93 1 14.5 2.57 14.5 4.5V7.5H12.5V7.74C13 7.58 13.5 7.5 14 7.5C16.5 7.5 18.5 9.5 18.5 12C18.5 13.58 17.92 15 16.88 16.12C18.56 14.32 20 12.32 20 10C20 5.58 16.42 2 12 2Z" fill="#101118"/>
+            </svg>
+          </div>
+          <div>
+            <div class="footer-title">Gorengan UMKM</div>
+            <div class="muted">Hangat, renyah, siap antar.</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#menu">Menu</a>
+          <a href="#promo">Promo</a>
+          <a href="#lokasi">Lokasi</a>
+          <button class="linklike" type="button" onclick="toggleCart()">Keranjang</button>
+        </div>
+        <div class="footer-copy muted">© <span id="year"></span> Gorengan UMKM. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay" onclick="toggleCart(false)" aria-hidden="true"></div>
+
+    <aside class="cart" id="cartPanel" aria-label="Keranjang belanja">
+      <div class="cart-head">
+        <div>
+          <div class="cart-title">Keranjang</div>
+          <div class="muted tiny">Atur qty, lalu checkout via WhatsApp.</div>
+        </div>
+        <button class="icon-btn" type="button" onclick="toggleCart(false)" aria-label="Tutup keranjang">✕</button>
+      </div>
+
+      <div class="cart-body">
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty" hidden>
+          <div class="empty-emoji" aria-hidden="true">🧺</div>
+          <div>
+            <strong>Keranjang masih kosong</strong>
+            <div class="muted tiny">Tambah menu dulu biar bisa checkout.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-foot">
+        <div class="cart-total">
+          <span class="muted">Total</span>
+          <strong id="total">0</strong>
+        </div>
+        <div class="cart-foot-actions">
+          <button class="btn btn-ghost" type="button" onclick="clearCart()">Kosongkan</button>
+          <button class="btn btn-primary" type="button" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
